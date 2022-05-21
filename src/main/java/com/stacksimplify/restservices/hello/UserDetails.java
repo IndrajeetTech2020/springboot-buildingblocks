@@ -1,9 +1,11 @@
 package com.stacksimplify.restservices.hello;
 
 public class UserDetails {
+	
 	private String firstName;
 	private String lastName;
 	private String city;
+	
 	public String getFirstName() {
 		return firstName;
 	}
@@ -28,10 +30,9 @@ public class UserDetails {
 		this.lastName = lastName;
 		this.city = city;
 	}
+	
 	@Override
 	public String toString() {
 		return "UserDetails [firstName=" + firstName + ", lastName=" + lastName + ", city=" + city + "]";
 	}
-	
-
 }
