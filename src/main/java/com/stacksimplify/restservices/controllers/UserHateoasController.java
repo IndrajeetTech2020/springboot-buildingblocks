@@ -61,7 +61,7 @@ public class UserHateoasController {
 			Link selfLink = WebMvcLinkBuilder.linkTo(this.getClass()).slash(userid).withSelfRel();
 			user.add(selfLink);
 			
-			EntityModel<Order> orders = WebMvcLinkBuilder.methodOn(OrderHateoasController.class)
+			CollectionModel<Order> orders = WebMvcLinkBuilder.methodOn(OrderHateoasController.class)
 										.getAllOrders(userid);
 			
 			Link ordersLink = WebMvcLinkBuilder.linkTo(orders).withRel("all-orders");
